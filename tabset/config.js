@@ -10,12 +10,12 @@
 
   //map tells the System loader where to look for things
   var  map = {
-    'core-js': 'https://npmcdn.com/core-js@2.4.0/client/core.min.js',
+    'core-js': 'https://unpkg.com/core-js@2.4.0/client/core.min.js',
     'app': 'src', // 'dist',
     'boostrap':  'src', // 'dist',
-    'rxjs': 'https://npmcdn.com/rxjs@5.0.0-beta.6',
+    'rxjs': 'https://unpkg.com/rxjs@5.0.0-beta.6',
     'angular2-data-table': 'https://raw.githubusercontent.com/swimlane/angular2-data-table/master/release/angular2-data-table.js',
-    'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api' // get latest
+    'angular2-in-memory-web-api': 'https://unpkg.com/angular2-in-memory-web-api' // get latest
   };
 
   //packages tells the System loader how to load when no filename and/or no extension
@@ -38,9 +38,9 @@
       '@angular/upgrade',
   ];
 
-  // add map entries for angular packages in the form '@angular/common': 'https://npmcdn.com/@angular/common@0.0.0-3'
+  // add map entries for angular packages in the form '@angular/common': 'https://unpkg.com/@angular/common@0.0.0-3'
   packageNames.forEach(function(pkgName) {
-    map[pkgName] = 'https://npmcdn.com/' + pkgName + ngVer;
+    map[pkgName] = 'https://unpkg.com/' + pkgName + ngVer;
   });
 
   // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
